@@ -206,9 +206,9 @@ mit \( \ln -\frac{1}{2} \leq x \leq 1 \)
     \[ \abb{g,h}{[\min(a,x), \max(a,x)]}{\R}, x,a \text{ fest} \]
     \[ g(t) := \sum_{k=0}^n \frac{f^{(k)}(t)}{k!} (x-t)^k, 
     h(t) := (x-t)^p \]
-    \[ g(t) = f(t) - \sum_{k=1}^n \frac{f^{(k)}(t)}{k!} (x-t)^k \]
+    \[ g(t) = f(t) + \sum_{k=1}^n \frac{f^{(k)}(t)}{k!} (x-t)^k \]
     \[ \Rightarrow g(x) = f(x), 
-    g(a) = \sum_{k=0}^n \frac{k=0}{n} \frac{f^{(k)}(a)}{k!} 
+    g(a) = \sum_{k=0}^{n}  \frac{f^{(k)}(a)}{k!} 
     (x-a)^k = T_n(f,a)(x).\]
     \( g, h \) sind stetig auf \( [\min(a,x), \max(a,x)] \) und
     differenzierbar in \( (\min(a,x), \max(a,x)) \).
@@ -220,7 +220,7 @@ mit \( \ln -\frac{1}{2} \leq x \leq 1 \)
 
     Zweiter MWS: \( \exists \zeta = \zeta(x) 
     \in (\min(a,x), \max(a,x)) \):
-    \[ h'(\zeta)(g(x) - g(a)) = g'(\zeta)(h(x - h(a))) \]
+    \[ h'(\zeta)(g(x) - g(a)) = g'(\zeta)(h(x) - h(a)) \]
     \[ h(x) - h(a) = 0 - (x-a)^p = -(x-a)^p \]
     \[ g(x) - g(a) = f(x) - T_n(f,a)(x) = R_n(f,a)(x) \]
     \begin{align*}
